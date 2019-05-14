@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLNHConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLNHConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanlyNhahang.Properties.Settings.GlobalReference.Default.QLNHConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FoodCategoryTableAdapter" GeneratorDataComponentClassName="FoodCategoryTableAdapter" Name="FoodCategory" UserDataComponentName="FoodCategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLNHConnectionString1 (Settings)" DbObjectName="QLNH.dbo.FoodCategory" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select  ID,Name  from FoodCategory as a,Food as b where a.ID =b.ID </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FoodCategory" msprop:Generator_TableClassName="FoodCategoryDataTable" msprop:Generator_TableVarName="tableFoodCategory" msprop:Generator_TablePropName="FoodCategory" msprop:Generator_RowDeletingName="FoodCategoryRowDeleting" msprop:Generator_RowChangingName="FoodCategoryRowChanging" msprop:Generator_RowEvHandlerName="FoodCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="FoodCategoryRowDeleted" msprop:Generator_UserTableName="FoodCategory" msprop:Generator_RowChangedName="FoodCategoryRowChanged" msprop:Generator_RowEvArgName="FoodCategoryRowChangeEvent" msprop:Generator_RowClassName="FoodCategoryRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
